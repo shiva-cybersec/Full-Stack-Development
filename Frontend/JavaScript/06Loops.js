@@ -58,14 +58,44 @@
     // }while(i<10);
 
 
-// 4) forEach
-    // Ans: Used to loop through arrays.
-    // Will learn after arrays.
+
+// 4) forEach()
+// Mainly used with arrays.
+// Used to loop through arrays.
+// It takes each element one by one
+// and gives it to the callback function parameter.
+// You can perform any operation on each value.
+
+let arr = [1,2,34,5,6];
+arr.forEach(function(val){
+    console.log(val);
+});
 
 
-// 5) for in loop
-    // Ans: Used to loop through object keys/properties.
-    // Will learn after objects.
+
+
+// 5) for...in loop
+// Mainly used with objects.
+// Used to loop through object keys/properties.
+// It gives the key name one by one.
+
+// Syntax:
+// for(let variableName in objectName){
+//     code
+// }
+
+let person = {
+    name: "Shiva",
+    age: 25,
+    ph_no: 9183849184
+};
+
+for(let key in person){
+    console.log(key);          // gives keys
+    console.log(person[key]);  // gives values
+}
+
+
 
 
 // 6) for of loop
