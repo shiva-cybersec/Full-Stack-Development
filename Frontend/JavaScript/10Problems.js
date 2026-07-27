@@ -133,4 +133,119 @@ Object.keys(person).forEach(function(val){
 let timer1 = setTimeout(function(val){
     console.log("Time's up!")
 }, 12400)
+// *************************************************
+
+
+
+
+// 11) Write a higher-oder function runTwice(fn) that takes another function and executes it two times
+// Solution:
+function runTwice(fn){
+    fn();
+    fn();
+}
+runTwice(function(){
+    console.log("Callback Function")
+});
+// *************************************************
+
+
+
+
+// 12) Create one pure function that always returns the same output for the given input, and one impure function using a global variable
+// Solution:
+// Pure function
+let pure = 25;
+function notTouched(a,b){
+    console.log(a+b)
+}
+notTouched(20,30);
+notTouched(20,30)
+
+
+// Impure function
+let impure = 30;
+function touched(a,b){
+    console.log(Math.random + a + b)
+    console.log(a + impure++)
+}
+touched(20,30)
+touched(20,30)
+// *************************************************
+
+
+
+
+// 13) Write a function that uses object destructuring inside parameters to extract and print name and age.
+// Solution: 
+function obj({name, age} ){
+    console.log(name, age)
+}
+obj({
+    name: "Shiva",
+    age: 25,
+    roll_no: 21
+})
+// *************************************************
+
+
+
+
+// 14) Demonstrate the difference between normal function and arrow function when used as object methods( this issue).
+// Solution:
+let difference = {
+    fun1 : function (){
+        console.log(this) // object is difference key_value pairs
+    },
+    fun2: ()=>{
+        console.log(this) //object is parent object and parent is difference and difference object is window 
+    },
+    fun3: function(){
+        let newArrow = ()=>{
+            console.log(this)
+        }
+        newArrow(); //object is parent object and parent is function and function object is difference key_value pairs
+    }
+}
+difference.fun1();
+difference.fun2();
+difference.fun3();
+// *************************************************
+
+
+
+// 15) Given an array of numbers, use map() to create a new array where each number is squared.
+// Solution:
+let arr2 = [23,4,2,1,234,22,5]
+let newArr2 = arr2.map(function(val){
+    return val * val;
+ });
+ console.log(newArr2)
+ // *************************************************
+
+
+
+
+ // 16) Use filter() to get only even numbers from an array
+ // Solution:
+let arr3 = [23,4,2,1,234,22,5,8,6,44,56,88,23,53,77]
+let newArr3 = arr3.filter(function(val){
+    return val%2===0;
+})
+console.log(newArr3);
+// *************************************************
+
+
+
+
+// 17) Use reduce() to find the total salary from an array numbers [1000, 2000, 3000].
+// Solution:
+let arr4 = [1000,2000,3000];
+let newArr4 = arr4.reduce(function(acc, val){
+    return acc + val;
+},0)
+console.log(newArr4);
+// *************************************************
+
+
 
