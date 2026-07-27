@@ -385,14 +385,110 @@ user.greet();
 // *************************************************
 
 
-// this keyword
-// Refers to the current object.
 
-let student3 = {
+
+
+// this keyword
+// 1)
+// If we print this in the global scope (browser),
+// this points to the window object.
+console.log(this); // Window
+// ++++++++++++++ +++++++++ +++++++++++ +++++++++++
+
+
+// 2)
+// If we store this inside a variable in the global scope,
+// it is still the window object.
+let a = this;
+console.log(a); // Window
+// ++++++++++++++ +++++++++ +++++++++++ +++++++++++
+
+
+
+// 3)
+// If we print this inside a normal function (browser),
+// this also points to the window object.
+function one(){
+    console.log(this);
+}
+one(); // Window
+// ++++++++++++++ +++++++++ +++++++++++ +++++++++++
+
+
+
+// 4)
+// If we print this inside a normal function that belongs to an object,
+// this points to the object that called the function.
+
+let student = {
     name: "Shiva",
     show: function(){
-        console.log(this.name);
+        console.log(this);
     }
-
 };
-student3.show(); // Shiva// *************************************************
+student.show(); // student object
+// ++++++++++++++ +++++++++ +++++++++++ +++++++++++
+
+
+
+// 5)
+// Arrow functions DO NOT create their own this.
+// They take this from their parent.
+// If the parent's this is window,
+// arrow function's this is also window.
+
+let demo = () => {
+    console.log(this);
+};
+demo(); // Window
+// ++++++++++++++ +++++++++ +++++++++++ +++++++++++
+
+
+
+// 6)
+// If an arrow function is inside a normal function
+// that belongs to an object,
+// the arrow function uses the parent's this.
+// Parent (show) has this = student.
+// Therefore arrow's this = student.
+
+let student2 = {
+    name: "Ram",
+    show: function(){
+
+        let demo = () => {
+            console.log(this);
+        };
+        demo();
+
+    }
+};
+student2.show(); // student2 object
+// ++++++++++++++ +++++++++ +++++++++++ +++++++++++
+
+
+
+// 7)
+// Normal function inside object
+// and inside that normal function,
+// another normal function is created.
+// The inner normal function does NOT inherit parent's this.
+// It creates its own this.
+
+// In browser:
+// inner normal function's this = window
+
+let student = {
+    name: "Shiva",
+    show: function(){
+        console.log(this.name); // this = student
+
+        function inner(){
+            console.log(this);
+        }
+        inner();
+    }
+};
+student.show(); // this window
+
+
