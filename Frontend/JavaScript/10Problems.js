@@ -205,11 +205,19 @@ let difference = {
             console.log(this)
         }
         newArrow(); //object is parent object and parent is function and function object is difference key_value pairs
+    },
+    fun4: function(){
+        function abc(){
+            console.log(this)
+        }
+        abc();
     }
+
 }
 difference.fun1();
 difference.fun2();
 difference.fun3();
+difference.fun4();
 // *************************************************
 
 
@@ -238,10 +246,10 @@ console.log(newArr3);
 
 
 
-// 17) Use reduce() to find the total salary from an array numbers [1000, 2000, 3000].
+// 17) Use reduce() to find the total salary from an array of numbers [1000, 2000, 3000].
 // Solution:
-let arr4 = [1000,2000,3000];
-let newArr4 = arr4.reduce(function(acc, val){
+let salary = [1000,2000,3000];
+let newArr4 = salary.reduce(function(acc, val){
     return acc + val;
 },0)
 console.log(newArr4);
@@ -249,3 +257,52 @@ console.log(newArr4);
 
 
 
+// 18) Create an array of names and use some() and every() to test a condition (e.g., all names longer than 3 chars)
+// Solution:
+let names = ["Shiva", "Bhumi", "Roma", "Sita", "Hira","Sagar","Om","Bishnu","Don"];
+let newNames1 = names.some(function(val){
+    return val.length>3;
+})
+let newNames2 = names.every(function(val){
+    return val.length>3;
+})
+
+console.log(newNames1);
+console.log(newNames2);
+// *************************************************
+
+
+
+
+// 19) Create an object user and test the behavior of Object.freeze() and Object.seal() by adding/changing keys.
+// Solution:
+let users = {
+    user1: "Shiva",
+    user2: "Nitin",
+    user3: "Punit",
+    user4: "Naresh"
+}
+// Object.freeze(user);
+Object.seal(users)
+users['user1'] = "Roman"; // canot update if object is freeze
+console.log(users.user1)
+delete(users['user1']) // can't delete if object is sealed
+console.log(users.user1)
+// *************************************************
+
+
+
+
+
+
+// 20) Create a nested object (user -> address -> city) and access the city name inside it
+// Solution:
+let objs= {
+    user: {
+        name: "Shiva",
+        address: {
+            city: "Kathmandu"
+        }
+    }
+}
+objs.address.city()
