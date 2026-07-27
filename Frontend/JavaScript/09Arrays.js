@@ -26,7 +26,7 @@ console.log(arr2[0]);
 
 // 3) In-built functions of arrays
 // [push, pop, shift, unshift, indexOf, array destructuring,
-// filter, some, map, reduce, spread operator,
+// filter, some, map, reduce, every, spread operator,
 // slice, reverse, sort, join, toString]
 
 let arr3 = [23,44,"shiva",true,NaN,function(){let a = 40},{name:"sagar",age:23}];
@@ -130,6 +130,56 @@ console.log(result);
 // *************************************************
 
 
+
+// every()
+// Takes each element from array one by one
+// and gives it to the callback function parameter.
+// Checks the condition.
+// If ALL elements become true,
+// it returns true.
+// If even one element becomes false,
+// it immediately stops and returns false.
+// every() = "Does every value match my condition?"
+
+let arr7 = [1,2,3,4];
+let result = arr7.every(function(val){
+    return val > 0;
+
+});
+console.log(result);
+
+
+// Working:
+// val = 1 → 1 > 0 ✅
+// val = 2 → 2 > 0 ✅
+// val = 3 → 3 > 0 ✅
+// val = 4 → 4 > 0 ✅
+
+// All values are true,
+// so it returns true.
+
+// Output:
+// true
+// *************************************************
+
+
+
+//  DIFFERENCE BETWEEN SOME AND EVERY
+// some()
+// Checks each element and returns true if at least one element passes the condition.
+// Stops immediately when it finds the first true value.
+
+
+// every()
+// Checks each element and returns true only if all elements pass the condition.
+// Stops immediately when it finds the first false value.
+// *************************************************
+
+
+
+
+
+
 // reduce()
 // Takes each element from array one by one
 // and gives it to the callback function.
@@ -226,6 +276,8 @@ let student1 = {
 // 2nd way
 let studentNew = new Object();
 // *************************************************
+
+
 
 
 // 6) Creating objects, accessing properties,
