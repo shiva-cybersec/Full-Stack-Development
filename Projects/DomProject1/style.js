@@ -1,19 +1,23 @@
-let istatus  = document.querySelector("h5")
-let addFriend = document.querySelector("#add")
-let flag = 0
-addFriend.addEventListener('click', function(){
-    if(flag === 0){
-    istatus.innerHTML = "Friends"
-    istatus.style.color = "green"
-    addFriend.innerHTML = "Remove"
-    flag++
-}
+let statusText = document.querySelector("h5");
+let button = document.querySelector("#add");
+let flag = 0;
+
+button.addEventListener("click",function(){
+
+    if(flag===0){
+        statusText.innerHTML = "Friends";
+        statusText.style.color = "green";
+        button.innerHTML = "Remove Friend";
+        button.style.backgroundColor = "#e74c3c";
+        flag = 1;
+    }
 
     else{
-        istatus.innerHTML = "Stranger"
-        istatus.style.color = "red"
-        addFriend.innerHTML = "Add Friend"
-        flag --
+        statusText.innerHTML = "Stranger";
+        statusText.style.color = "red";
+        button.innerHTML = "Add Friend";
+        button.style.backgroundColor = "#3498db";
+        flag = 0;
     }
-})
 
+});
