@@ -71,17 +71,8 @@ cssChanging.style.backgroundColor = "white";
 // click, mouse movement, typing, drag etc.
 let btn = document.querySelector("button");
 
-btn.innerHTML = "Click Me";
-btn.style.color = "black";
-btn.style.backgroundColor = "lightblue";
-
-
 btn.addEventListener("click", function(){
-
-    h1.innerHTML = "I am changed";
-    p.style.color = "red";
-    p.style.backgroundColor = "yellow";
-    h1.style.fontSize = "45px";
+ h1.style.fontSize = "45px";
 
 });
 
