@@ -1,27 +1,27 @@
 let arr = [
     {
-        dp: "photos/model1.jpg",
-        story: "photos/model2.jpg"
+        dp: "../../photos/model1.jpg",
+        story: "../../photos/model2.jpg"
     },
     {
-        dp: "photos/model3.jpg",
-        story: "photos/model4.jpg"
+        dp: "../../photos/model3.jpg",
+        story: "../../photos/model4.jpg"
     },
     {
-        dp: "photos/model5.jpg",
-        story: "photos/model6.jpg"
+        dp: "../../photos/model5.jpg",
+        story: "../../photos/model6.jpg"
     },
     {
-        dp: "photos/model7.jpg",
-        story: "photos/model8.jpg"
+        dp: "../../photos/model7.jpg",
+        story: "../../photos/model8.jpg"
     },
     {
-        dp: "photos/model9.jpg",
-        story: "photos/model10.jpg"
+        dp: "../../photos/model9.jpg",
+        story: "../../photos/model10.jpg"
     },
     {
-        dp: "photos/model11.jpg",
-        story: "photos/model12.jpg"
+        dp: "../../photos/model11.jpg",
+        story: "../../photos/model12.jpg"
     }
 ];
 
