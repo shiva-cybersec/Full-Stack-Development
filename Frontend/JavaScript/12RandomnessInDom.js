@@ -111,27 +111,3 @@ let arr = [
         ]
     }
 ];
-
-
-// Array stores multiple values.
-// Object stores information about one thing.
-
-// Example:
-// arr = many teams
-// object = one team information
-
-
-// Create element
-// syntax: document.createElement("newelementname")
-// appending a child
-
-// create element
-let h2 = document.createElement("h2")
-h2.innerHTML = "Download"
-
-// append child
-let main = document.querySelector("main")
-main.appendChild(h2)
-
-// giving css 
-h2.style.color = "yellow"
