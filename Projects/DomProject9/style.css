@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(33, 21, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: 350px;
+    width: 300px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    position: absolute;
+}
+.card div{
+    position: relative;
+    overflow: hidden;
+}
+.card img{
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+
+}
+.card h2{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+.card i{
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+
+     /* background: linear-gradient(to right bottom, rgb(180,11,180), rgb(239, 6, 142)); */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: url(https://img.magnific.com/free-vector/instagram-background-gradient-colors_23-2147819864.jpg);
+    background-size: cover;
+
+    transform: translate(-50%,-50%) scale(0) rotate(-60deg);
+    transition: all cubic-bezier(.89,2.15,.82,.5) 0.2s;
+
+}
