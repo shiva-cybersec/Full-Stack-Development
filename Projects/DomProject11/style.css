@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#piano {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    text-align: center;
+}
+
+.whitetab {
+    height: 320px;
+    width: 60px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 9px 0 #D2D2D2;
+    position: relative;
+}
+
+.whitetab h2 {
+    color: black;
+    font-weight: 200;
+}
+
+.blacktab {
+    height: 170px;
+    width: 48px;
+    background: black;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 9px 0 #555;
+    position: absolute;
+    top: -1px;
+    right: -24px;
+    z-index: 10;
+    transform-origin: top center;
+}
+
+.blacktab h2 {
+    color: white;
+    font-weight: 200;
+}
+
+.whitetab,
+.blacktab {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    user-select: none;
+    cursor: pointer;
+    transition: transform 0.05s ease, box-shadow 0.05s ease;
+}
+.whitetab:active {
+    transform: translateY(3px);
+    box-shadow: 0 4px 0 #D2D2D2;
+}
+
+.blacktab:active {
+    transform: translateY(3px);
+    box-shadow: 0 4px 0 #555;
+}
