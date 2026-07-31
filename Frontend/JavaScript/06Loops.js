@@ -80,16 +80,27 @@
 // and gives it to the callback function parameter.
 // We can perform any operation on each value.
 
+// forEach() gives up to 3 values:
+// 1st = current element
+// 2nd = current index
+// 3rd = whole array (optional)
+
+// You can give any name to the parameters.
+// But the first parameter is the current element,
+// the second is the current index.
+
+
 // forEach() is a simplified version of:
-// i = 0, i < arr.length, i++, arr[i]
+// i = 0
+// i < arr.length
+// i++
+// arr[i]
 
 let arr = [1, 2, 34, 5, 6];
-arr.forEach(function(val) {
-    console.log(val);
+arr.forEach(function(val, index) {
+    console.log(val, index);
 });
 // *****************************************************
-
-
 
 
 
