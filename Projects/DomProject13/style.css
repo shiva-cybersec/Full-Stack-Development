@@ -8,15 +8,21 @@
 html, body {
     height: 100%;
     width: 100%;
-    background-color: black;
 }
 :root{
     --x: 200px;
     --y: 200px
 }
+body{
+    background-image: url(../../photos/image2.jpg);
+    background-size: cover;
+    background-position: center;
+}
 .box{
     height: 100%;
     width: 100%;
-   background: radial-gradient(at var(--x) var(--y), red, green);
+   background: radial-gradient(150px at var(--x) var(--y), rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.738));
+   
+
 
 }
