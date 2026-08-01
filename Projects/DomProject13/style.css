@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+:root{
+    --x: 200px;
+    --y: 200px
+}
+.box{
+    height: 100%;
+    width: 100%;
+   background: radial-gradient(at var(--x) var(--y), red, green);
+
+}
