@@ -4,6 +4,7 @@
 // 4) Handling Exceptions Using try-catch and try-catch-finally
 // 5) How to Throw Errors in JavaScript
 // 6) Error Handling in Asynchronous Code
+// 7) API
 
 
 
@@ -191,3 +192,37 @@ catch(err){
     )
 }
 // ******************************************************************
+// API (Application Programming Interface)
+// An API is a service that provides data or functionality.
+
+// Endpoint: An endpoint is the URL used to access the API.
+// Request: A request is sent to the API asking for data.
+// Response: The API sends back the requested data.
+
+fetch("https://api.github.com/users/octocat")
+.then(res => res.json())
+.then(data => console.log(data))
+
+
+// API: GitHub API
+// Endpoint: https://api.github.com/users/octocat
+// Request: fetch("https://api.github.com/users/octocat")
+// Response (GitHub sends something like this):
+
+/*
+{
+  "login": "octocat",
+  "id": 583231,
+  "avatar_url": "https://...",
+  "html_url": "https://github.com/octocat",
+  "followers": 18000,
+  "following": 9
+}
+*/
+
+// .then(res => res.json())
+// Converts the response into a JavaScript object notation
+
+// .then(data => console.log(data))
+// Prints the user data to the console.
+
