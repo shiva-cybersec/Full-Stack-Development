@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="shortcut icon" href="../../icons/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Productivity Dashboard</title>
+</head>
+
+<body>
+    <div id="main">
+        <nav>
+           <div class="nav-in">
+             <h2>Productivity DashBoard</h2>
+             <div class="theme">
+            <h4>Change Theme</h4>
+        </div>
+           </div>
+        </nav>
+        <section class="allElems">
+            <header>
+                <div class="header1">
+                    <h2></h2>
+                    <h1></h1>
+                    <h4>Bhaktapur {NP}</h4>
+                </div>
+                <div class="header2">
+                    <h2>20°C</h2>
+                    <h2>Weather</h2>
+
+                    <h4> Light rain</h4>
+                    <h3 class="Precipitation">Precipitation: 35%</h3>
+                    <h3 class="Humidity">Humidity: 49%</h3>
+                    <h3 class="wind">Wind: 10 km/h</h3>
+                </div>
+            </header>
+
+            <div class="allFeatures">
+                <div class="todo elem" id="0">
+                    <img src="../../photos/image27.jpg" alt="">
+                    <h2>To Do List</h2>
+                </div>
+                <div class="daily elem" id="1">
+                    <img src="../../photos/image28.jpg" alt="">
+                    <h2>Daily Planner</h2>
+                </div>
+                <div class="moti elem" id="2">
+                    <img src="../../photos/image34.jpg" alt="">
+                    <h2>Motivation</h2>
+                </div>
+                <div class="pomo elem" id="3">
+                    <img src="../../photos/image35.jpg" alt="">
+                    <h2>Pomodoro Timer</h2>
+                </div>
+                <div class="goals elem" id="4">
+                    <img src="../../photos/image36.jpg" alt="">
+                    <h2>Daily Goals</h2>
+                </div>
+            </div>
+        </section>
+        <section class="fullElem todo-list-fullpage">
+            <button class="back" id="0">Close</button>
+            <h2>Your Personalized Task List</h2>
+
+            <div class="todo-container">
+                <div class="addTask">
+                    <form>
+                        <input id="task-input" type="text" placeholder="Enter Task">
+                        <textarea placeholder="Enter Details" name="" id=""></textarea>
+                        <div class="mark-imp">
+                            <input type="checkbox" name="" id="check">
+                            <label for="check">Mark as Important!</label>
+                        </div>
+                        <button>Add Task</button>
+                    </form>
+                </div>
+                <div class="allTask">
+
+
+                </div>
+            </div>
+        </section>
+        <section class="fullElem daily-planner-fullpage">
+            <button class="back" id="1">Close</button>
+            <h2>Plan Your Day To Be More Productive</h2>
+
+            <div class="day-planner">
+
+            </div>
+        </section>
+        <section class="fullElem motivational-fullpage">
+            <button class="back" id="2">Close</button>
+            <div class="motivation-fullpage-container">
+                <div class="motivation-container">
+                    <div class="motivation-wrapper">
+                        <img src="../../icons/closequote.jpg" alt="">
+                        <div class="motivation-1">
+                            <h2>Quote of the Day</h2>
+                        </div>
+                        <div class="motivation-2">
+
+                            <h1></h1>
+
+
+                        </div>
+                        <div class="motivation-3">
+                            <h2></h2>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fullElem pomodoro-fullpage">
+            <button class="back" id="3">Close</button>
+            <h2>Study With Me!</h2>
+
+            <h4 class="session">Work Session</h4>
+            <div class="pomo-timer">
+                <h1>25:00</h1>
+                <button class="start-timer">Start</button>
+                <button class="pause-timer">Pause</button>
+                <button class="reset-timer">Reset</button>
+            </div>
+        </section>
+        <section class="fullElem daily-goals-fullpage">
+
+    <button class="back" id="4">Close</button>
+
+    <h1>Daily Goals</h1>
+
+    <div class="goals-container">
+
+        <!-- LEFT SIDE : ADD GOAL -->
+        <div class="goal-form-container">
+
+            <h2>Add New Goal</h2>
+
+            <form id="goal-form">
+
+                <input
+                    type="text"
+                    id="goal-input"
+                    placeholder="Enter your goal..."
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="goal-target"
+                    placeholder="Target (e.g. 10)"
+                    min="1"
+                    required
+                >
+
+                <button type="submit">
+                    Add Goal
+                </button>
+
+            </form>
+
+            <div class="overall-progress">
+
+                <h3>Today's Progress</h3>
+
+                <div class="overall-progress-bar">
+                    <div class="overall-progress-fill"></div>
+                </div>
+
+                <h4 class="overall-progress-text">
+                    0%
+                </h4>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE : ALL GOALS -->
+        <div class="all-goals">
+
+            <h2>Your Goals</h2>
+
+            <div class="goal-list">
+                <!-- Goals will be added by JavaScript -->
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
