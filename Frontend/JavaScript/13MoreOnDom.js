@@ -36,6 +36,7 @@
 
 
 
+
 // ****** Part 1 More on DOM *****
 // Array stores multiple values.
 // Object stores information about one thing.
