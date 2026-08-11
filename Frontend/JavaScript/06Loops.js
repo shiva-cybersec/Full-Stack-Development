@@ -1,3 +1,28 @@
+// Contents:
+// 1) Loops
+//      a) Static Loop
+//      b) Dynamic Loop
+//      c) for Loop
+//      d) while Loop
+//      e) do...while Loop
+//      f) forEach()
+//      g) for...in Loop
+//      h) for...of Loop
+//      i) Recursion
+//      j) Loop Control Statements
+//          - break
+//          - continue
+// 2) Convert String to Number
+//      a) parseInt()
+//      b) Number()
+//      c) Unary +
+// 3) Validate Proper Input Code
+// ******************************************************************************************
+
+
+
+
+
 // ****** Loops *******
 // Loop means repeating something again and again.
 

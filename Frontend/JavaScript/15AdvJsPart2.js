@@ -1,3 +1,29 @@
+// Contents:
+// 1) this Keyword
+// 2) this in Global Scope
+// 3) this in Normal Functions
+// 4) this in Object Methods
+// 5) this in Arrow Functions
+// 6) this in Nested Normal Functions
+// 7) this in Arrow Functions Inside Normal Functions
+// 8) call()
+// 9) apply()
+// 10) bind()
+// 11) Difference Between call(), apply() and bind()
+// 12) Class Expression
+// 13) Class Expression and Hoisting
+// 14) Inheritance
+// 15) extends Keyword
+// 16) super() Keyword
+// 17) Private Variables
+// 18) Getter and Setter
+// 19) get Keyword
+// 20) set Keyword
+// 21) Difference Between Getter and Setter
+// ******************************************************************************************
+
+
+
 /*
 1) this keyword
 2) call()

@@ -1,5 +1,27 @@
-// ***** Operators in JS *****
+// Contents:
+// 1) Operators in JS
+//      a) Arithmetic Operators
+//      b) Assignment Operators
+//      c) Comparison Operators
+//      d) Logical Operators
+//      e) Ternary Operator
+//      f) Type Checking and Instance Checking
+//      g) Spread / Rest Operator
+//      h) Nullish Coalescing Operator
+//      i) Optional Chaining Operator
+// 2) Special Values
+// 3) Variable Hoisting in JS
+//      a) var Hoisting
+//      b) let and const Hoisting
+//      c) Temporal Dead Zone (TDZ)
+// ******************************************************************************************
 
+
+
+
+
+
+// ***** Operators in JS *****
 // 1) Arithmetic Operators
     // Ans: +  -  *  /  %  **
 
@@ -38,6 +60,9 @@
     // Safely accesses object properties.
     // Returns undefined instead of giving an error if the property doesn't exist.
 
+// ******************************************************************************************
+
+
 
 
 // ***** Special Values *****
@@ -53,6 +78,11 @@
 
     // 4) undefined + 1 = NaN
     // Because undefined is not a numeric value.
+
+// ******************************************************************************************
+
+
+
 
 
 // ***** Variable Hoisting in JS *******
@@ -81,3 +111,4 @@
     // Temporal Dead Zone (TDZ):
     // (TDZ) = menaing The area before declaring a let/const variable where we cannot use that variable.
 
+// ******************************************************************************************

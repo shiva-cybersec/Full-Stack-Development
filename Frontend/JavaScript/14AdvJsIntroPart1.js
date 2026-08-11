@@ -1,7 +1,30 @@
-// *****************************************************
-// ******** Object Oriented Programming (OOP) **********
-// *****************************************************
+// Contents:
+// 1) Introduction to OOP — Why OOP?
+// 2) Benefits of OOP
+// 3) Objects
+// 4) Classes
+// 5) new Keyword
+// 6) Constructor
+// 7) Prototype
+// 8) Objects, Classes, new, Constructor and Prototype
+// 9) Example — PepsiMaker Class
+// 10) Example — Burger Class
+// 11) Example — Book Class
+// 12) Constructor Parameters
+// 13) Creating Objects with new
+// 14) Class Methods
+// 15) Example — PhoneMaker Class
+// 16) Shared Prototype Property
+// 17) Shared Prototype Method
+// 18) Accessing Prototype Properties and Methods
+// ******************************************************************************************
 
+
+
+
+
+
+// ******** Object Oriented Programming (OOP) **********
 
 // 1) Introduction to OOP (Why OOP?)
 // OOP = Object Oriented Programming.

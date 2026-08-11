@@ -1,3 +1,24 @@
+// Contents:
+// 1) Introduction To DOM
+// 2) Selecting an Element
+// 3) querySelector()
+// 4) Changing HTML
+// 5) innerHTML
+// 6) textContent
+// 7) Changing CSS
+// 8) CSS Property camelCase
+// 9) Event Listeners
+// 10) addEventListener()
+// 11) More Ways of Selecting Elements
+// 12) Selecting by ID
+// 13) Selecting by Class
+// 14) Selecting Multiple Elements
+// 15) querySelectorAll()
+// 16) More on Changing HTML
+// 17) innerHTML vs textContent
+// **********************************************************************************************
+
+
 // ***** Introduction To DOM ******
 
 // DOM = Document Object Model

@@ -1,3 +1,14 @@
+// Contents:
+// 1) Conditions in JavaScript
+// 2) Truthy and Falsy Values
+// 3) if-else
+// 4) if-else if-else
+// 5) Ternary Operator
+// 6) Switch Statement
+// ******************************************************************************************
+
+
+
 // ***** Conditions in JS **** 
 // like security guard checking your id before letting you inside
 

@@ -1,3 +1,21 @@
+// Contents:
+// 1) Qn1 — Check Voting Eligibility
+// 2) Qn2 — Print Multiplication Table
+// 3) Qn3 — Count Numbers Greater Than 8
+// 4) Qn4 — Password Access Check
+// 5) Qn5 — Allow Only 3 Password Attempts
+// 6) Qn6 — Count "yes" Until "stop"
+// 7) Qn7 — Print Numbers Divisible by 7
+// 8) Qn8 — Sum of Odd Numbers from 1 to 30
+// 9) Qn9 — Keep Asking Until Even Number
+// 10) Qn10 — Print Numbers Between Two Inputs
+// 11) Qn11 — Print First 3 Odd Numbers
+// 12) Qn12 — Count Positive Numbers
+// 13) Qn13 — ATM Simulator — 3 Withdrawals
+// ******************************************************************************************
+
+
+
 // Qn1. Ask user’s age and check if eligible to vote
 //      If age >= 18 → “Eligible”, else → “Not eligible”
 // Solution:
@@ -200,4 +218,5 @@ while(attempt < 3){
 
     console.log(`${3-attempt} attempts left`);
 }
+// *****************************************************
 

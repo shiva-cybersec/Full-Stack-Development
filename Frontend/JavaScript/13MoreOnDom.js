@@ -1,3 +1,41 @@
+// Contents:
+// 1) Part 1 — More on DOM
+// 2) Array vs Object
+// 3) document.createElement()
+// 4) appendChild()
+// 5) Giving CSS to Created Elements
+// 6) Part 2 — More on DOM
+// 7) Synchronous vs Asynchronous
+// 8) JavaScript and Asynchronous Tasks
+// 9) setTimeout()
+// 10) setInterval()
+// 11) clearInterval()
+// 12) Part 3 — More on DOM
+// 13) Different Event Listeners
+// 14) Event Object
+// 15) Pointer Event Object
+// 16) Keyboard Event Object
+// 17) Mouse Event Object
+// 18) Custom Cursor
+// 19) stopPropagation()
+// 20) Dataset
+// 21) Audio
+// 22) Keyboard Events — keydown, e.key and e.code
+// 23) NodeList
+// 24) querySelectorAll() and NodeList
+// 25) Converting NodeList into Array
+// 26) Parent and Child
+// 27) parentNode
+// 28) childNodes
+// 29) Text Nodes
+// ******************************************************************************************
+
+
+
+
+
+
+
 // ****** Part 1 More on DOM *****
 // Array stores multiple values.
 // Object stores information about one thing.

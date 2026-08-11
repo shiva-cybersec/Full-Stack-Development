@@ -1,3 +1,22 @@
+// Contents:  
+// 1) Introduction to JavaScript
+// 2) History of Javascript
+// 3) Why is JavaScript important?
+// 4) How to run JavaScript in the browser?
+// 5) var, let, const
+// 6) console.error("Error");
+// 7) console.warn("Warning");
+// 8) console.log("Hello");
+// 9) console.info("Information");
+// 10) console.table(["Ram", "Shyam", "Hari"]);
+// 11) prompt("Enter your name");
+// 12) alert("Police");
+// 13) statement expressions
+// ******************************************************************************************
+
+
+
+
 // 1) Introduction to JavaScript
         // JavaScript (JS) is a scripting language.
         // We write code in English-like syntax.
@@ -24,13 +43,13 @@
         // We usually add JS to an HTML file using script tag <script src="file.js"> </script>
         // When the HTML file runs in the browser, the JavaScript code also runs.
 
-// 2) Why is JavaScript important?
+// 3) Why is JavaScript important?
         // JavaScript makes a website interactive.
         // We can create animations, buttons, forms, menus,
         // popups, games, and many other interactive features.
 
 
-// 3) How to run JavaScript in the browser?
+// 4) How to run JavaScript in the browser?
         // Right-click on a website.
         // Click Inspect.
         // Open the Console tab.
@@ -40,40 +59,40 @@
         // To save your code, write it in a separate .js file.
 
 
-// 4) var, let, const
+// 5) var, let, const
         // These keywords are used to create variables in JavaScript.
 
 
-// 5) console.error("Error");
+// 6) console.error("Error");
         // Displays an error message in the Console.
         // Used to show errors in red color.
 
-// 6) console.warn("Warning");
+// 7) console.warn("Warning");
         // Displays a warning message in the Console.
         // Used to show warning messages (usually yellow).
 
-// 7) console.log("Hello");
+// 8) console.log("Hello");
         // Displays a normal message in the Console.
         // Mostly used for testing, debugging, and printing output.
 
-// 8) console.info("Information");
+// 9) console.info("Information");
         // Displays an informational message in the Console.
         // Used to show general information.
         // In many browsers, it looks similar to console.log().
 
-// 9) console.table(["Ram", "Shyam", "Hari"]);
+// 10) console.table(["Ram", "Shyam", "Hari"]);
         // Displays arrays or objects in a table format.
         // Makes data easier to read and compare in the Console.
 
-// 10) prompt("Enter your name");
+// 11) prompt("Enter your name");
         // Displays an input box and takes input from the user.
         // Whatever the user enters is returned as a string.
 
-// 11) alert("Police");
+// 12) alert("Police");
         // Displays a popup message with an OK button.
         // Used to show important information or warning messages.
 
-// 12) statement expressions
+// 13) statement expressions
     // Expression:
         // A piece of code that produces a value.
         // Example: 5 + 10 calculates and gives the value 15.

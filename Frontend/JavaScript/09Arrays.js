@@ -1,6 +1,32 @@
+// Contents:
+// 1) Qn1 — Create a Function that Prints "Hello JavaScript"
+// 2) Qn2 — Create an add(a, b) Function
+// 3) Qn3 — Function with a Default Parameter
+// 4) Qn4 — Use Rest Parameters to Add Unlimited Numbers
+// 5) Qn5 — Create an IIFE
+// 6) Qn6 — Create a Nested Function
+// 7) Qn7 — Add and Remove Elements from an Array
+// 8) Qn8 — Print Array Elements Using a Loop
+// 9) Qn9 — Print Object Key Values
+// 10) Qn10 — Use setTimeout()
+// 11) Qn11 — Create a Higher-Order Function runTwice()
+// 12) Qn12 — Create a Pure Function and an Impure Function
+// 13) Qn13 — Object Destructuring Inside Parameters
+// 14) Qn14 — Difference Between Normal Function and Arrow Function with this
+// 15) Qn15 — Use map() to Create a Squared Array
+// 16) Qn16 — Use filter() to Get Even Numbers
+// 17) Qn17 — Use reduce() to Find Total Salary
+// 18) Qn18 — Use some() and every()
+// 19) Qn19 — Test Object.freeze() and Object.seal()
+// 20) Qn20 — Nested Object: user → address → city
+// ******************************************************************************************
+
+
+
+
+
+
 // ************Questions:************
-
-
 // 1) Write a function sayHello() that prints "Hello JavaScript".
 // Solution:
 

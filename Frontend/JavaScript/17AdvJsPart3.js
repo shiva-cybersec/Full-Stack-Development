@@ -1,3 +1,35 @@
+// Contents:
+// 1) Introduction to Asynchrony in JavaScript
+// 2) JavaScript Single-Threaded Nature
+// 3) Synchronous JavaScript
+// 4) Blocking in JavaScript
+// 5) Asynchronous Programming
+// 6) Understanding Asynchrony
+// 7) Introduction to Callbacks
+// 8) Callback Function Example
+// 9) How Callbacks Work
+// 10) Real-Life Callback Example
+// 11) Multiple Dependent Asynchronous Tasks
+// 12) Callback Hell
+// 13) Pyramid of Doom
+// 14) Problems with Callback Hell
+// 15) Introduction to Promises
+// 16) Promise States — Pending, Fulfilled and Rejected
+// 17) Using .then()
+// 18) Using .catch()
+// 19) Introduction to async and await
+// 20) async Function
+// 21) await Keyword
+// 22) How async and await Work
+// 23) fetch()
+// 24) fetch() Response Object
+// 25) .json() Method
+// 26) Using fetch() with .then() and .catch()
+// ******************************************************************************************
+
+
+
+
 // 1) Introduction to Asynchrony In Javascript
 // 2) Introduction to 'callbacks' and Problems in Callbacks
 // 3) Understanding 'promises' , 'pending', 'resolved', 'rejected'

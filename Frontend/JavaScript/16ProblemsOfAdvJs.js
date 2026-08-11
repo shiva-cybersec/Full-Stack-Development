@@ -1,3 +1,32 @@
+// Contents:
+// 1) Section 1 — Objects and OOP Thinking
+// 2) Create a User Object with Login Method
+// 3) Managing Multiple Users Without a Class
+// 4) Managing Multiple Users Using a Class
+// 5) Create a Product Object with Discount Method
+// 6) Section 2 — Classes and Objects
+// 7) Create a Car Class with Brand, Speed and Drive Method
+// 8) Create Multiple Objects from the Same Class
+// 9) Why Classes Are Useful in Large Projects
+// 10) Section 3 — Constructor and this Keyword
+// 11) Create a Student Class with Constructor and Introduce Method
+// 12) Section 4 — Constructor Functions and Prototypes
+// 13) Create a User Constructor Function
+// 14) Add a Method Inside a Constructor
+// 15) Add a Method Using Prototype
+// 16) Compare Constructor Methods and Prototype Methods
+// 17) Why Constructor Methods Are Different from Prototype Methods
+// 18) Section 5 — call(), apply() and bind()
+// 19) Create a Function that Uses this.name
+// 20) Use call() with Arguments
+// 21) Use apply() with Arguments
+// 22) Use bind() with Arguments
+// 23) Normal Function Call and this
+// ******************************************************************************************
+
+
+
+
 // ********** SECTION 1: Objects and OOPS Thinking (Foundation) *****
 // 1) Create a user object that stores name and email and has a login method which prints "User logged in"
 let user = {

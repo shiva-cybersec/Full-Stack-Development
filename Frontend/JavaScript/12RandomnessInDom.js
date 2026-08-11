@@ -1,3 +1,24 @@
+// Contents:
+// 1) JavaScript and Web API
+// 2) JavaScript and Browser Communication
+// 3) JavaScript Class Naming Convention
+// 4) Math.random()
+// 5) Math.random() Range
+// 6) Multiplying Math.random()
+// 7) Math.floor()
+// 8) Generating Random Whole Numbers
+// 9) Math.floor(Math.random() * maxNumber) Formula
+// 10) RGB Color System
+// 11) RGB Values and Range
+// 12) RGB Color Examples
+// 13) Understanding RGB Color Dominance
+// 14) Array of Objects
+// 15) Nested Arrays Inside Objects
+// ******************************************************************************************
+
+
+
+
 // JavaScript is a programming language.
 
 // Web API acts as a bridge between JavaScript and the browser.

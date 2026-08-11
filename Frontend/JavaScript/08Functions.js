@@ -1,30 +1,25 @@
-// ***** Functions *****
-
-///////////////////////////////////////////////////////
-// Syllabus or contents/list we will covered
-// 1) Understanding Functions and why it's widely used
-//    - Parameters
-//    - Arguments
-//    - Rest Parameters
-//    - Hoisting
-//    - Variable Hoisting
-//    - Function Hoisting
-
+// Contents (Functions):
+// 1) Understanding Functions and Why They're Widely Used
+//      a) Parameters
+//      b) Arguments
+//      c) Rest Parameters
+//      d) Hoisting
+//      e) Variable Hoisting
+//      f) Function Hoisting
+//
 // 2) Parameters
-//    - Required Parameters
-//    - Destructured Parameters
-//    - Rest Parameters
-//    - Default Parameters
-
+//      a) Required Parameters
+//      b) Destructured Parameters
+//      c) Rest Parameters
+//      d) Default Parameters
+//
 // 3) Arguments
-//    - Positional Arguments
-//    - Spread Arguments
-
+//      a) Positional Arguments
+//      b) Spread Arguments
+//
 // 4) Classic Function
 // 5) Nested Function
-
 // 6) Immediately Invoked Function Expression (IIFE)
-
 // 7) Arrow Function (Fat Arrow Function)
 // 8) Anonymous Function
 // 9) Higher Order Function
@@ -32,11 +27,12 @@
 // 11) First Class Function
 // 12) Pure Function
 // 13) Impure Function
-
-// 14) Scoping ['global', 'function scope'] 
-// 15) closures , scoping rule
-////////////////////////////////////////////////////
-
+// 14) Scoping
+//      a) Global Scope
+//      b) Function Scope
+// 15) Closures
+// 16) Scoping Rule
+// ******************************************************************************************
 
 
 
@@ -103,6 +99,7 @@ testingtwo("hero",25,"abc@gmail.com","sanita","anita","katrina");
 // *************************************************
 
 
+
 // Function Hoisting
 // Normal function declarations can be called before they are written.
 
@@ -111,6 +108,7 @@ function hoist(){
     console.log("Function hoisting happened.");
 }
 // *************************************************
+
 
 
 // Function Expression Hoisting

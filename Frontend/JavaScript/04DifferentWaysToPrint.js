@@ -1,3 +1,15 @@
+// Contents:
+// 1) Printing Direct Values / Expressions
+// 2) Printing Using a Variable
+// 3) Printing Multiple Values Using Comma (,)
+// 4) String Concatenation Using (+)
+// 5) Template Literals Using Backticks
+// 6) Logging Arrays
+// 7) Logging Objects
+// 8) Logging Function Return Values
+// ******************************************************************************************
+
+
 // 1) Direct value/expression
 console.log("Shiva");   // Prints a direct string.
 console.log(1 + 2);     // Prints the result of an expression.

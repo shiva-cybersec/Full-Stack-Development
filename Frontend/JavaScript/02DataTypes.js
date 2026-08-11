@@ -1,10 +1,33 @@
+// Contents:
+// 1) Comments
+// 2) Datatypes:
+//    a) Number
+//    b) String
+//    c) Boolean
+//    d) Null
+//    e) Array
+//    f) Object
+//    g) Symbol
+//    h) Undefined
+//    i) NaN(Not a Number)
+//    j) Infinity
+// 3) Primitive and Non-primitive(Reference) Datatypes
+// ******************************************************************************************
+
+
+
+
+
 // 1) Add comments
     // Ans: We use // to write comments in JavaScript.
     // Comments are ignored by JavaScript and are used to explain code.
+// ******************************************************************************************
+
+
+
 
 
 // ***** DataTypes *****
-
     // Whatever value we store inside a variable, JavaScript automatically
     // detects its datatype.
     // We don't need to manually mention the datatype.
@@ -80,10 +103,13 @@
     // Represents an infinite value.
     // Example:
     // 1/0 gives Infinity;
+// ******************************************************************************************
+
+
+
 
 
 // 12) Primitive and Reference (Non-Primitive) Datatypes in JS
-
 
     // Primitive datatype:
     // Stores the actual value.
