@@ -1,79 +1,64 @@
 // Contents:
-// 1) Uses of <script> element of HTML
-// 2) What is React?
-// 3) Why React and ReactDOM?
-// 4) Library vs Framework
-// 5) React syntax
+// 1) ReactJS introduction
+// 2) Uses of ReactJS
+// 3) Library vs Framework
+// 4) React vs ReactDOM
+// 5) How to use React in HTML and where to write React code
 // 6) What is JSX?
 // 7) What is Babel?
 // 8) Why do we need Babel?
 // 9) How to use Babel?
-// 10) ReactDOM.createRoot()
-// 11) root.render()
-// 12) How to display multiple elements
-// 13) React Fragment
-// 14) JavaScript inside JSX
-// 15) Variables inside JSX
-// 16) JSX attributes
-// 17) Components
-// 18) How React makes website building easier
-// ======================================================
+// 10) React syntax
+// 11) Creating elements using React
+// 12) ReactDOM and root
+// 13) root.render()
+// 14) Creating multiple elements
+// 15) React Fragment
+// 16) JavaScript inside JSX
+// 17) Variables inside JSX
+// 18) JSX attributes
+// 19) Components
+// 20) Creating elements using functions
+// 21) How React makes website building easier
+// ***************************************************
 
 
-// 1) USES OF <script> ELEMENT OF HTML <script> tag is used to add JavaScript to our HTML file.
+// 1) REACTJS INTRODUCTION
+// ReactJS = JavaScript library.
 
-// a) We can directly write JavaScript inside <script>.
-<script> console.log("Hello JavaScript") </script>
+// ReactJS is an external library.
+// It is a bunch of code written by someone else
+// outside our computer, which we can use in our project.
 
-// b) We can write JavaScript in another file and connect that file using "src".
-<script src="script.js"></script>
+// Normally, when we create UI using HTML, CSS and JS,
+// we may change/update the DOM directly.
 
-// c) The JavaScript file can be inside our computer or it can be somewhere on the internet. We can connect it using "src".
-<script src="https://example.com/script.js"></script>
+// ReactJS is mainly used to create UI.
 
-// d) type="module" is used when we are working with JavaScript modules.
-<script type="module" src="script.js"></script>
-// ======================================================
+// React updates only the part of the UI that needs to change,
+// instead of us manually changing the whole page.
 
-
-// 2) WHAT IS REACT?
-// React is a JavaScript library.
-
-// Library means a bunch of code
-// already written by someone else
-// which we can use in our project.
-
-// React helps us create the UI of websites and apps easily.
-
-// UI = what the user sees on the screen.
-// ======================================================
+// React keeps track of UI changes
+// and updates the necessary DOM parts.
+// ***************************************************
 
 
+// 2) USES OF REACTJS
 
-// 3) WHY DO WE USE REACT AND REACTDOM?
-// React and ReactDOM do different jobs.
+// ReactJS is mainly used to create user interfaces (UI).
 
-// a) React
-// -> React is used to create the UI.
-// -> We create elements and components using React.
-
-// b) ReactDOM
-// -> ReactDOM connects React with the HTML page.
-// -> It puts our React UI inside the browser.
-
-// For React website:
-// React + ReactDOM
-
-// For React Native app:
-// React + React Native
-
-// Simple:
-// React -> Creates what we want to show.
-// ReactDOM -> Shows it on the HTML page.
-// ======================================================
+// Other libraries/tools can be used together with React:
+//
+// 1) GSAP -> to create animations
+// 2) Swiper -> to create sliders/carousels
+// 3) Three.js -> to create 3D elements
+// 4) Lenis -> to create smooth scrolling
+// 5) ReactJS -> to create UI
+// ***************************************************
 
 
-// 4) LIBRARY VS FRAMEWORK
+// 3) LIBRARY VS FRAMEWORK
+
 // React = Library
 // Like having a naksa (blueprint) and pre-made tools.
 // You decide how to build the house.
@@ -81,92 +66,83 @@
 
 // Angular = Framework
 // Like hiring a thekदार (contractor).
-// He already has a system and rules.
-// You follow his way of building the house.
+// He already has a system and rules for building the house.
+// You follow his structure and process.
 
 // Simple:
-// React -> You decide what to do. (You call it)
-// Angular -> Framework decides what to do. (It calls you)
+// React -> You decide how to build. (You call it)
+// Angular -> Framework decides how it should be built. (It calls you)
 
 // Main difference:
 // Library -> You are more in control.
 // Framework -> Framework is more in control.
-// ======================================================
+// ***************************************************
 
 
-// 5) REACT SYNTAX
-// Basic React syntax:
+// 4) REACT VS REACTDOM
 
-function ComponentName() {
-    return (
-        <>
-            <h1>Hello React</h1>
-        </>
-    )
-}
+// React
+// -> Used to create UI elements and components.
 
-// Create a root:
-const root = ReactDOM.createRoot(
-    document.querySelector("#main")
-)
-
-// Show the component:
-root.render(<ComponentName />)
+// ReactDOM
+// -> Used to put React UI into the browser's DOM.
 
 // Simple:
-// function -> Creates a component.
-// return -> Tells what the component should show.
-// <> </> -> Groups multiple elements.
-// createRoot() -> Creates a place for React.
-// render() -> Shows the React code on the page.
-// ======================================================
+// React -> Creates what we want to show.
+// ReactDOM -> Shows it on the HTML page.
+// ***************************************************
+
+
+// 5) HOW TO USE REACT IN HTML
+// AND WHERE DO WE WRITE OUR REACT CODE?
+
+// a) Search for React CDN.
+// b) Copy the two CDN lines under "development".
+// c) Paste them in the HTML file before our JS file.
+// d) We write our React code inside the JS file.
+
+// Example:
+//
+// <script src="React CDN"></script>
+// <script src="ReactDOM CDN"></script>
+// <script src="script.js"></script>
+// ***************************************************
 
 
 // 6) WHAT IS JSX?
-// JSX = JavaScript XML =meaning JavaScript + HTML-like code
+// JSX = JavaScript XML.
+
 // JSX is JavaScript with an extra feature
 // that allows us to write HTML-like code inside JavaScript.
-
-
-// JSX is an easier way to write React UI.
-// In JSX, we can write HTML-like code directly inside JavaScript.
 
 // Example:
 const element = <h1>Hello React</h1>
 
-// It looks like HTML,
-// but it is written inside JavaScript.
-
 // Simple:
-// JSX -> HTML-like code written inside JavaScript.
-// ======================================================
+// JSX = JavaScript + HTML-like code.
+// ***************************************************
 
 
 // 7) WHAT IS BABEL?
-// Babel is another external JavaScript tool.
 
-// Babel changes JSX into normal JavaScript.
+// Babel is an external JavaScript tool.
+// Babel is a JavaScript compiler/transpiler.
 
-// Browser understands JavaScript,
-// but browser does not directly understand JSX.
+// It changes JSX into normal JavaScript
+// that the browser can understand.
 
 // Simple:
 // Babel = translator.
-
-// JSX -> Babel translates JSX into -> JavaScript
-// ======================================================
-
+// ***************************************************
 
 
 // 8) WHY DO WE NEED BABEL?
-// Problem:
-// Browser does not understand JSX directly.
+// Browser does not directly understand JSX.
 
-// Example: const element = <h1>Hello</h1>
+// Example:
+const element = <h1>Hello</h1>
 
-// Browser sees JSX, but it does not know how to run it.
-// So Babel translates it.
-
+// So Babel translates JSX into JavaScript.
 // JSX
 // ↓
 // Babel
@@ -174,14 +150,12 @@ const element = <h1>Hello React</h1>
 // JavaScript
 // ↓
 // Browser
-
-// Simple:
-// Babel translates JSX so the browser can understand it.
-// ======================================================
+// ***************************************************
 
 
 // 9) HOW TO USE BABEL?
-// First, load Babel into our HTML file.
+
+// First, load Babel using its external script.
 <script src="babel-link-here"></script>
 
 // Then use type="text/babel"
@@ -193,77 +167,146 @@ const element = <h1>Hello React</h1>
 </script>
 
 // type="text/babel"
-// tells Babel:
-// "Translate the code inside this script."
-// ======================================================
+// tells Babel to translate the code inside this script.
+// ***************************************************
 
 
-// 10) ReactDOM.createRoot()
-// First, we need to choose
-// where React should show our UI.
+// 10) REACT SYNTAX
+// Basic React syntax:
+
+function ComponentName() {
+    return (
+        <>
+            <h1>Hello React</h1>
+        </>
+    )
+}
+
+// Create a React root:
+const root = ReactDOM.createRoot(
+    document.querySelector("#main")
+)
+
+// Render the component:
+root.render(<ComponentName />)
+
+// Simple:
+// function -> Creates a component.
+// return -> Tells what the component should show.
+// <> </> -> Groups multiple elements.
+// createRoot() -> Creates a React root.
+// render() -> Shows the React code on the page.
+// ***************************************************
+
+
+// 11) HOW TO CREATE AN ELEMENT USING JS
+// AND PUT IT INSIDE HTML?
+
+// Method 1: Normal JavaScript
+// This is the normal way we used before React.
+
+let h1 = document.createElement("h1")
+h1.innerHTML = "Hello from JS"
+document.body.appendChild(h1)
+
+
+// Method 2: Using React
+// Syntax:
+//
+// React.createElement(
+//     "element name",
+//     attributes,
+//     "content"
+// )
+
+// Example:
+
+let h2 = React.createElement("h2", null, "I am h2")
+let h3 = React.createElement("h3", null, "I am h3")
+let h4 = React.createElement("h4", null, "I am h4")
+
+// React.createElement() creates a React element.
+// But it does not directly put the element into HTML.
+// We need ReactDOM to put it into the HTML.
+// ***************************************************
+
+
+// 12) CREATING A ROOT
+
+// We need a place inside HTML
+// where React will display our UI.
 
 // In HTML:
-<div id="main"></div>
+//
+// <div id="container"></div>
 
-// Select that element:
-const container = document.querySelector("#main")
+// Select that container first:
+let container = document.querySelector("#container")
 
-// Make it a React root:
-const root = ReactDOM.createRoot(container)
+// Now make that container a React root:
+let root = ReactDOM.createRoot(container)
 
-// Simple:
-// HTML element -> React root -> React UI
-
-// Think of root as the place
-// where React will put our UI.
-// ======================================================
-
-
-// 11) root.render()
-// render() means: "Show this on the screen."
-
-// Example: root.render(<h1>Hello</h1>)
-
-// We can also show a component(Component = a function that returns JSX.): 
-root.render(<Hero />)
-
-// Simple:
-// root.render() -> Tells React what to show.
-// ======================================================
+// Think of it like:
+//
+// React element = plant
+// ReactDOM root = ground where we plant it
+// ***************************************************
 
 
-// 12) HOW TO DISPLAY MULTIPLE ELEMENTS?
-// render() needs one main element.
+// 13) root.render()
+// render() is used to display the React element.
 
-// We cannot do this:
-root.render(
-    <h1>Hello</h1>,
-    <p>Welcome</p>
+// Example:
+root.render(h2)
+
+// render() takes one main element.
+
+// So we cannot simply do:
+root.render(h2, h3, h4)
+
+// Instead, we create one parent element
+// and put multiple elements inside it.
+// ***************************************************
+
+
+// 14) CREATING MULTIPLE ELEMENTS
+
+// Create a parent div:
+let div = React.createElement(
+    "div",
+    {id: "parent", className: "ok"},
+    [h2, h3, h4]
 )
 
-// So we create one parent element and put all other elements inside it.
-const div = (
-    <div>
-        <button>Submit</button>
-        <p>Welcome to React</p>
-    </div>
-)
+// Then render the parent:
 root.render(div)
 
-// Here:
-// div
-// ├── button
-// └── p
+// Explanation:
+//
+// React.createElement(
+//     "div",                  -> element we want to create
+//     {id: "parent"},         -> attributes
+//     [h2, h3, h4]            -> elements inside it
+// )
 
-// We render the div,
-// and the div contains the other elements.
-// ======================================================
+// The second argument is used to give attributes.
+// We give an object containing key-value pairs.
+
+// Example:
+// {id: "parent", className: "ok"}
+
+// In React, use "className" instead of "class".
+
+// Example:
+// {className: "ok"}
+// ***************************************************
 
 
-// 13) REACT FRAGMENT
+// 15) REACT FRAGMENT
 // <> </> is called a React Fragment.
 
-// It is used to group multiple elements.
+// It is used to group multiple elements
+// without creating an extra HTML element.
 
 // Example:
 const elements = (
@@ -273,15 +316,13 @@ const elements = (
     </>
 )
 
-// It groups the elements
-// without creating an extra div.
-
 // Simple:
-// <> </> -> Group elements without adding a new HTML element.
-// ======================================================
+// <> </> -> Groups elements without adding a new HTML element.
+// ***************************************************
 
 
-// 14) JAVASCRIPT INSIDE JSX
+// 16) JAVASCRIPT INSIDE JSX
+
 // We can write JavaScript inside JSX
 // using { }.
 
@@ -299,11 +340,13 @@ const elements = (
 
 // Simple:
 // { } -> Used to write JavaScript inside JSX.
-// ======================================================
+// ***************************************************
 
 
-// 15) VARIABLES INSIDE JSX
-// We can create a variable and use it inside JSX.
+// 17) VARIABLES INSIDE JSX
+
+// We can create a variable
+// and use it inside JSX.
 
 const name = "Shiva"
 const greeting = <h1>Hello {name}</h1>
@@ -313,17 +356,16 @@ const greeting = <h1>Hello {name}</h1>
 
 // Simple:
 // {name} -> Takes the value stored inside name.
-// ======================================================
+// ***************************************************
 
 
-// 16) JSX ATTRIBUTES
+// 18) JSX ATTRIBUTES
+
 // We can give attributes to JSX elements
 // just like we do in HTML.
 
 // Example:
 <h1 id="title">Hello</h1>
-
-// Example:
 <img src="image.jpg" alt="My Image" />
 
 // For CSS class,
@@ -333,13 +375,13 @@ const greeting = <h1>Hello {name}</h1>
 
 // Simple:
 // Attributes give extra information to an element.
-// ======================================================
+// ***************************************************
 
 
-// 17) COMPONENTS
-// Component = a small reusable part of our UI.
-// We normally create a component using a function.
+// 19) COMPONENTS
+// Component = a function that returns JSX.
 
+// Example:
 function Hero() {
     return (
         <>
@@ -349,33 +391,54 @@ function Hero() {
     )
 }
 
-// We can use the component like this:
+// We can show the component:
 root.render(<Hero />)
+
+// <Hero /> -> Uses the Hero component.
 
 // Simple:
 // Function -> Component
 // Component -> UI part
-// <Hero /> -> Uses the Hero component.
-
-// We can create many components:
-//
-// Navbar
-// Hero
-// About
-// Contact
-// Footer
-//
-// Then combine them to create a complete website.
-// ======================================================
+// <Hero /> -> Uses the component.
+// ***************************************************
 
 
-// 18) HOW REACT MAKES WEBSITE BUILDING EASIER?
+// 20) CREATING ELEMENTS USING FUNCTIONS
+
+// If we create something inside a function
+// and want to give it back,
+// we use return.
+
+// We don't use console.log()
+// because console.log() only prints in the console.
+
+function abc() {
+    return React.createElement(
+        "p",
+        null,
+        "Lorem ipsum hu mei"
+    )
+}
+
+// Now render the value returned by abc():
+root.render(abc())
+
+// abc()
+// -> Function runs.
+// -> React.createElement() creates a React element.
+// -> return sends the element back.
+// -> root.render() displays the element.
+// ***************************************************
+
+
+// 21) HOW REACT MAKES WEBSITE BUILDING EASIER?
 // a) We can break a big website into small components.
-//
+
 // Example:
 // Navbar
 // Hero
 // About
+// Contact
 // Footer
 
 // b) We can reuse the same component
@@ -388,10 +451,9 @@ root.render(<Hero />)
 // using { }.
 
 // e) React handles UI updates for us,
-// so we don't have to manually change
-// every part of the HTML.
+// so we don't have to manually change every part of the DOM.
 
 // Simple:
 // React = Create small reusable UI parts
 // and combine them to build a complete website.
-// ======================================================
+// ***************************************************
