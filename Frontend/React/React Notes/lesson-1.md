@@ -24,22 +24,34 @@
 
 
 // 1) REACTJS INTRODUCTION
+
 // ReactJS = JavaScript library.
 
 // ReactJS is an external library.
-// It is a bunch of code written by someone else
-// outside our computer, which we can use in our project.
+// It is code written by other developers
+// that we can use in our own project.
 
-// Normally, when we create UI using HTML, CSS and JS,
-// we may change/update the DOM directly.
+// We mainly use ReactJS to create UI.
+// UI means everything we see on a website,
+// like text, buttons, images, cards, forms, etc.
 
-// ReactJS is mainly used to create UI.
 
-// React updates only the part of the UI that needs to change,
-// instead of us manually changing the whole page.
+// DOM = the HTML page represented as a structure inside the browser.
 
-// React keeps track of UI changes
-// and updates the necessary DOM parts.
+// When something on the page needs to change,
+// with normal JavaScript, we can directly find that DOM element
+// and change it ourselves.
+
+// React makes this easier.
+// Instead of manually changing the DOM,
+// we tell React what the UI should look like.
+
+// When something changes,
+// React finds what needs to be changed
+// and updates that part of the DOM.
+
+// So, React helps us create UI
+// and update the UI more easily.
 // ***************************************************
 
 
@@ -112,8 +124,7 @@
 // 6) WHAT IS JSX?
 // JSX = JavaScript XML.
 
-// JSX is JavaScript with an extra feature
-// that allows us to write HTML-like code inside JavaScript.
+// JSX is same as Javascript, but we can write HTML-like code directly in our Javascript code.
 
 // Example:
 const element = <h1>Hello React</h1>
@@ -128,7 +139,7 @@ const element = <h1>Hello React</h1>
 // Babel is an external JavaScript tool.
 // Babel is a JavaScript compiler/transpiler.
 
-// It changes JSX into normal JavaScript
+// It changes/translates JSX into normal JavaScript
 // that the browser can understand.
 
 // Simple:
